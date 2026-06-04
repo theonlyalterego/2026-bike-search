@@ -17,71 +17,174 @@
     <div id="jump-links"></div>
   </nav>
 
+  <div id="loading" class="loading">Loading results...</div>
   <main id="grid"></main>
 
   <footer>
-    <p>Links open in new tabs. <span id="updated"></span></p>
+    <p>Data fetched from OfferUp, Pinkbike, and Craigslist. <span id="updated"></span></p>
   </footer>
 
   <script>
-    const bikes = [
-      { name: "Commencal Meta HT",       query: "commencal+meta+ht" },
-      { name: "Rocky Mountain Growler",  query: "rocky+mountain+growler" },
-      { name: "Norco Torrent",          query: "norco+torrent" },
+    const BIKES = [
+      { name: "Commencal Meta HT",      query: "commencal+meta+ht" },
+      { name: "Rocky Mountain Growler", query: "rocky+mountain+growler" },
+      { name: "Norco Torrent",         query: "norco+torrent" },
       { name: "Kona Honzo",            query: "kona+honzo" },
       { name: "Giant Fathom",          query: "giant+fathom" },
       { name: "Marin San Quentin",     query: "marin+san+quentin" },
       { name: "Specialized Fuse",      query: "specialized+fuse" },
     ];
 
-    const sources = [
-      { name: "OfferUp",   color: "#7b1fa2", url: q => `https://offerup.com/search?q=${q}` },
-      { name: "Pinkbike",  color: "#2e7d32", url: q => `https://www.pinkbike.com/buysell/list/?lat=39.0503&lng=-77.3909&distance=50&q=${q}` },
-      { name: "Craigslist",color: "#1565c0", url: q => `https://washingtondc.craigslist.org/search/sss?query=${q}` },
+    const SOURCES = [
+      { key: "offerup",    label: "OfferUp",    color: "#7b1fa2", url: q => `https://offerup.com/search?q=${q}` },
+      { key: "pinkbike",   label: "Pinkbike",   color: "#2e7d32", url: q => `https://www.pinkbike.com/buysell/list/?lat=39.0503&lng=-77.3909&distance=50&q=${q}` },
+      { key: "craigslist", label: "Craigslist", color: "#1565c0", url: q => `https://washingtondc.craigslist.org/search/sss?query=${q}` },
     ];
 
-    function render() {
-      const grid = document.getElementById("grid");
-      const jump = document.getElementById("jump-links");
+    document.getElementById("date").textContent = new Date().toLocaleDateString("en-US", {
+      weekday: "long", year: "numeric", month: "long", day: "numeric"
+    });
 
-      bikes.forEach((bike, i) => {
-        const id = `b${i}`;
+    function buildCard(bike, results) {
+      const id = bike.name.replace(/\s+/g, "-").toLowerCase();
+      const card = document.createElement("article");
+      card.className = "card";
+      card.id = id;
 
-        const a = document.createElement("a");
-        a.href = `#${id}`;
-        a.textContent = bike.name;
-        jump.appendChild(a);
+      const h2 = document.createElement("h2");
+      h2.textContent = bike.name;
+      card.appendChild(h2);
 
-        const card = document.createElement("article");
-        card.className = "card";
-        card.id = id;
-        const h2 = document.createElement("h2");
-        h2.textContent = bike.name;
-        card.appendChild(h2);
+      const hasAny = SOURCES.some(s => (results[s.key] || []).length > 0);
 
+      if (!hasAny) {
+        const none = document.createElement("p");
+        none.className = "no-listings";
+        none.textContent = "No listings found — try these searches:";
+        card.appendChild(none);
         const btns = document.createElement("div");
         btns.className = "btns";
-        sources.forEach(s => {
+        SOURCES.forEach(s => {
           const btn = document.createElement("a");
           btn.href = s.url(bike.query);
           btn.target = "_blank";
           btn.rel = "noopener";
           btn.className = "btn";
           btn.style.backgroundColor = s.color;
-          btn.textContent = s.name;
+          btn.textContent = s.label;
           btns.appendChild(btn);
         });
         card.appendChild(btns);
-        grid.appendChild(card);
+        return card;
+      }
+
+      SOURCES.forEach(s => {
+        const items = results[s.key] || [];
+        if (items.length === 0) return;
+
+        const sourceLabel = document.createElement("div");
+        sourceLabel.className = "source-label";
+        sourceLabel.style.borderLeftColor = s.color;
+        sourceLabel.innerHTML = `<span style="color:${s.color}">${s.label}</span> <span class="count">${items.length}</span>`;
+        card.appendChild(sourceLabel);
+
+        const list = document.createElement("div");
+        list.className = "listing-list";
+
+        items.slice(0, 10).forEach(item => {
+          const div = document.createElement("div");
+          div.className = "listing-item";
+
+          if (item.img) {
+            const imgWrap = document.createElement("div");
+            imgWrap.className = "listing-img";
+            const img = document.createElement("img");
+            img.src = item.img;
+            img.alt = item.title;
+            img.loading = "lazy";
+            imgWrap.appendChild(img);
+            div.appendChild(imgWrap);
+          }
+
+          const info = document.createElement("div");
+          info.className = "listing-info";
+
+          const title = document.createElement("a");
+          title.className = "listing-title";
+          title.href = item.url;
+          title.target = "_blank";
+          title.rel = "noopener";
+          title.textContent = item.title;
+          info.appendChild(title);
+
+          if (item.price) {
+            const price = document.createElement("span");
+            price.className = "listing-price";
+            price.textContent = item.price;
+            info.appendChild(price);
+          }
+
+          if (item.location) {
+            const loc = document.createElement("span");
+            loc.className = "listing-location";
+            loc.textContent = item.location;
+            info.appendChild(loc);
+          }
+
+          div.appendChild(info);
+          list.appendChild(div);
+        });
+
+        card.appendChild(list);
+
+        // "View all" link to source
+        const viewAll = document.createElement("a");
+        viewAll.className = "view-all";
+        viewAll.href = s.url(bike.query);
+        viewAll.target = "_blank";
+        viewAll.rel = "noopener";
+        viewAll.textContent = `View all on ${s.label} →`;
+        viewAll.style.color = s.color;
+        card.appendChild(viewAll);
       });
+
+      return card;
     }
 
-    document.getElementById("date").textContent = new Date().toLocaleDateString("en-US", {
-      weekday: "long", year: "numeric", month: "long", day: "numeric"
-    });
-    document.getElementById("updated").textContent =
-      `Last refreshed ${new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}`;
-    render();
+    function render(data) {
+      const grid = document.getElementById("grid");
+      const jump = document.getElementById("jump-links");
+      const loading = document.getElementById("loading");
+      loading.style.display = "none";
+
+      const lookup = {};
+      (data.results || []).forEach(r => { lookup[r.bike_name] = r.sources; });
+
+      BIKES.forEach(bike => {
+        const a = document.createElement("a");
+        a.href = `#${bike.name.replace(/\s+/g, "-").toLowerCase()}`;
+        a.textContent = bike.name;
+        jump.appendChild(a);
+
+        const card = buildCard(bike, lookup[bike.name] || {});
+        grid.appendChild(card);
+      });
+
+      document.getElementById("updated").textContent =
+        `Last updated ${new Date(data.fetched_at).toLocaleString()}`;
+    }
+
+    fetch("data/listings.json")
+      .then(r => {
+        if (!r.ok) throw new Error("Not found");
+        return r.json();
+      })
+      .then(render)
+      .catch(() => {
+        // Fallback: show search links
+        document.getElementById("loading").textContent = "Could not load listings. Showing search links instead.";
+        render({ results: [] });
+      });
   </script>
 </body>
 </html>

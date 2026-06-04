@@ -1,0 +1,40 @@
+name: Daily Scrape
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          python -m playwright install chromium
+
+      - name: Run scraper
+        run: python scripts/scrape.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "bike-hunt-bot"
+          git config user.email "bot@bike-hunt"
+          git add data/listings.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update listings [skip ci]"
+            git push
+          fi

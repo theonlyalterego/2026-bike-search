@@ -1,0 +1,79 @@
+{
+  "fetched_at": "2026-06-04T19:08:59.443687",
+  "results": [
+    {
+      "bike_name": "Commencal Meta HT",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Rocky Mountain Growler",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Norco Torrent",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Kona Honzo",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": [
+          {
+            "title": "Medium Kona Honzo Deluxe",
+            "url": "https://offerup.com/item/detail/8731589b-a091-3b23-b26b-afba24aa924c",
+            "price": "$1,500",
+            "img": "https://images.offerup.com/LOIjxy0akcKD26DkJn3k5ARnHKI=/250x250/e0d7/e0d7163d2cd6497998eddc89273b7af5.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "bike_name": "Giant Fathom",
+      "sources": {
+        "craigslist": [
+          {
+            "title": "**2018 Giant Fathom 1 29\" Hardtail Mountain Bike \u2013 Excellent Condition",
+            "url": "https://reading.craigslist.org/bik/d/fleetwood-2018-giant-fathom-29-hardtail/7930427483.html",
+            "price": "$749"
+          },
+          {
+            "title": "Giant Fathom 1",
+            "url": "https://allentown.craigslist.org/bik/d/brodheadsville-giant-fathom/7934146364.html",
+            "price": "$900"
+          }
+        ],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Marin San Quentin",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Specialized Fuse",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    }
+  ]
+}
