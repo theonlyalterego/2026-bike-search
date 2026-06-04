@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Hunt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bike Hunt</h1>
+    <p class="subtitle">DC-area medium-frame hardtail search &middot; <span id="date"></span></p>
+  </header>
+
+  <nav id="jump">
+    <span>Jump to:</span>
+    <div id="jump-links"></div>
+  </nav>
+
+  <main id="grid"></main>
+
+  <footer>
+    <p>Links open in new tabs. <span id="updated"></span></p>
+  </footer>
+
+  <script>
+    const bikes = [
+      { name: "Commencal Meta HT",       query: "commencal+meta+ht" },
+      { name: "Rocky Mountain Growler",  query: "rocky+mountain+growler" },
+      { name: "Norco Torrent",          query: "norco+torrent" },
+      { name: "Kona Honzo",            query: "kona+honzo" },
+      { name: "Giant Fathom",          query: "giant+fathom" },
+      { name: "Marin San Quentin",     query: "marin+san+quentin" },
+      { name: "Specialized Fuse",      query: "specialized+fuse" },
+    ];
+
+    const sources = [
+      { name: "OfferUp",   color: "#7b1fa2", url: q => `https://offerup.com/search?q=${q}` },
+      { name: "Pinkbike",  color: "#2e7d32", url: q => `https://www.pinkbike.com/buysell/list/?lat=39.0503&lng=-77.3909&distance=50&q=${q}` },
+      { name: "Craigslist",color: "#1565c0", url: q => `https://washingtondc.craigslist.org/search/sss?query=${q}` },
+    ];
+
+    function render() {
+      const grid = document.getElementById("grid");
+      const jump = document.getElementById("jump-links");
+
+      bikes.forEach((bike, i) => {
+        const id = `b${i}`;
+
+        const a = document.createElement("a");
+        a.href = `#${id}`;
+        a.textContent = bike.name;
+        jump.appendChild(a);
+
+        const card = document.createElement("article");
+        card.className = "card";
+        card.id = id;
+        const h2 = document.createElement("h2");
+        h2.textContent = bike.name;
+        card.appendChild(h2);
+
+        const btns = document.createElement("div");
+        btns.className = "btns";
+        sources.forEach(s => {
+          const btn = document.createElement("a");
+          btn.href = s.url(bike.query);
+          btn.target = "_blank";
+          btn.rel = "noopener";
+          btn.className = "btn";
+          btn.style.backgroundColor = s.color;
+          btn.textContent = s.name;
+          btns.appendChild(btn);
+        });
+        card.appendChild(btns);
+        grid.appendChild(card);
+      });
+    }
+
+    document.getElementById("date").textContent = new Date().toLocaleDateString("en-US", {
+      weekday: "long", year: "numeric", month: "long", day: "numeric"
+    });
+    document.getElementById("updated").textContent =
+      `Last refreshed ${new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}`;
+    render();
+  </script>
+</body>
+</html>
