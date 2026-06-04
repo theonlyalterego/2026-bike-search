@@ -10,6 +10,11 @@
   <header>
     <h1>Bike Hunt</h1>
     <p class="subtitle">DC-area medium-frame hardtail search &middot; <span id="date"></span></p>
+    <div class="header-controls">
+      <button id="toggle-dismissed" class="hdr-btn">Show dismissed</button>
+      <button id="clear-dismissed" class="hdr-btn">Restore all</button>
+      <span id="dismissed-count" class="dismissed-count"></span>
+    </div>
   </header>
 
   <nav id="jump">
@@ -40,6 +45,59 @@
       { key: "pinkbike",   label: "Pinkbike",   color: "#2e7d32", url: q => `https://www.pinkbike.com/buysell/list/?lat=39.0503&lng=-77.3909&distance=50&q=${q}` },
       { key: "craigslist", label: "Craigslist", color: "#1565c0", url: q => `https://washingtondc.craigslist.org/search/sss?query=${q}` },
     ];
+
+    const REJECTED_KEY = "bike-hunt-dismissed";
+    let showDismissed = false;
+
+    function getDismissed() {
+      try { return new Set(JSON.parse(localStorage.getItem(REJECTED_KEY) || "[]")); }
+      catch { return new Set(); }
+    }
+
+    function saveDismissed(set) {
+      localStorage.setItem(REJECTED_KEY, JSON.stringify([...set]));
+    }
+
+    function dismissItem(url) {
+      const set = getDismissed();
+      set.add(url);
+      saveDismissed(set);
+      const el = document.querySelector(`.listing-item[data-url="${CSS.escape(url)}"]`);
+      if (el) el.classList.add("dismissed");
+      updateDismissedUI();
+    }
+
+    function undismissItem(url) {
+      const set = getDismissed();
+      set.delete(url);
+      saveDismissed(set);
+      const el = document.querySelector(`.listing-item[data-url="${CSS.escape(url)}"]`);
+      if (el) el.classList.remove("dismissed");
+      updateDismissedUI();
+    }
+
+    function clearAllDismissed() {
+      localStorage.removeItem(REJECTED_KEY);
+      document.querySelectorAll(".listing-item.dismissed").forEach(el => el.classList.remove("dismissed"));
+      updateDismissedUI();
+    }
+
+    function toggleDismissedVisibility() {
+      showDismissed = !showDismissed;
+      document.getElementById("toggle-dismissed").textContent =
+        showDismissed ? "Hide dismissed" : "Show dismissed";
+      document.querySelectorAll(".listing-item.dismissed").forEach(el => {
+        el.style.display = showDismissed ? "" : "none";
+      });
+    }
+
+    function updateDismissedUI() {
+      const count = getDismissed().size;
+      document.getElementById("dismissed-count").textContent = count ? `${count} dismissed` : "";
+    }
+
+    document.getElementById("toggle-dismissed").addEventListener("click", toggleDismissedVisibility);
+    document.getElementById("clear-dismissed").addEventListener("click", clearAllDismissed);
 
     document.getElementById("date").textContent = new Date().toLocaleDateString("en-US", {
       weekday: "long", year: "numeric", month: "long", day: "numeric"
@@ -91,9 +149,15 @@
         const list = document.createElement("div");
         list.className = "listing-list";
 
+        const dismissed = getDismissed();
         items.slice(0, 10).forEach(item => {
           const div = document.createElement("div");
           div.className = "listing-item";
+          div.dataset.url = item.url;
+          if (dismissed.has(item.url)) {
+            div.classList.add("dismissed");
+            if (!showDismissed) div.style.display = "none";
+          }
 
           if (item.img) {
             const imgWrap = document.createElement("div");
@@ -132,6 +196,25 @@
           }
 
           div.appendChild(info);
+
+          const dismissBtn = document.createElement("button");
+          dismissBtn.className = "dismiss-btn";
+          dismissBtn.title = dismissed.has(item.url) ? "Restore item" : "Dismiss item";
+          dismissBtn.textContent = dismissed.has(item.url) ? "\u21BA" : "\u2715";
+          dismissBtn.addEventListener("click", e => {
+            e.stopPropagation();
+            if (dismissed.has(item.url)) {
+              undismissItem(item.url);
+              dismissBtn.textContent = "\u2715";
+              dismissBtn.title = "Dismiss item";
+            } else {
+              dismissItem(item.url);
+              dismissBtn.textContent = "\u21BA";
+              dismissBtn.title = "Restore item";
+            }
+          });
+          div.appendChild(dismissBtn);
+
           list.appendChild(div);
         });
 
@@ -172,6 +255,7 @@
 
       document.getElementById("updated").textContent =
         `Last updated ${new Date(data.fetched_at).toLocaleString()}`;
+      updateDismissedUI();
     }
 
     fetch("data/listings.json")
