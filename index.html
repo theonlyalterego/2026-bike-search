@@ -258,6 +258,51 @@
         grid.appendChild(card);
       });
 
+      // Buyer's guide card
+      const guideCard = document.createElement("article");
+      guideCard.className = "card";
+      guideCard.id = "buyers-guide";
+      const guideToggle = document.createElement("button");
+      guideToggle.className = "collapse-btn";
+      guideToggle.textContent = "\u25BC Buyer's Guide";
+      let guideExpanded = false;
+      guideToggle.addEventListener("click", () => {
+        guideExpanded = !guideExpanded;
+        guideBody.style.display = guideExpanded ? "" : "none";
+        guideToggle.textContent = guideExpanded ? "\u25B2 Buyer's Guide" : "\u25BC Buyer's Guide";
+      });
+      guideCard.appendChild(guideToggle);
+
+      const guideBody = document.createElement("div");
+      guideBody.style.display = "none";
+      guideBody.innerHTML = `
+        <table class="guide-table">
+          <tr><th>Category</th><th>What to Look For</th></tr>
+          <tr>
+            <td>Frame / Geometry</td>
+            <td><strong>Head tube angle:</strong> 64&ndash;67&deg; (slack = stable).<br><strong>Size:</strong> Medium &mdash; always check the brand&rsquo;s geometry chart against your height.</td>
+          </tr>
+          <tr>
+            <td>Fork / Suspension</td>
+            <td><strong>Travel:</strong> 130&ndash;150mm for trail + dirt jump versatility.<br><strong>Check used:</strong> stanchions must be free of scratches, pitting, and oil leaks (costly to fix).</td>
+          </tr>
+          <tr>
+            <td>Drivetrain</td>
+            <td><strong>1x (single chainring)</strong> &mdash; simpler, lighter, better chain retention for rough riding.</td>
+          </tr>
+          <tr>
+            <td>Dropper Post</td>
+            <td><strong>Essential.</strong> Lets you drop the saddle for descents / jumps and raise it for climbs, all from the handlebar.</td>
+          </tr>
+          <tr>
+            <td>Tires</td>
+            <td><strong>High-volume, knobby.</strong> More grip on loose dirt and extra compliance to offset the hardtail&rsquo;s lack of rear suspension.</td>
+          </tr>
+        </table>
+      `;
+      guideCard.appendChild(guideBody);
+      grid.appendChild(guideCard);
+
       // Local shops card
       const lbsCard = document.createElement("article");
       lbsCard.className = "card";

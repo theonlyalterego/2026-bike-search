@@ -297,6 +297,59 @@ header h1 {
   color: #1c1c1e;
 }
 
+.collapse-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c1c1e;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.collapse-btn:hover {
+  color: #555;
+}
+
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.guide-table th {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  background: #f0f0f5;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-bottom: 2px solid #d1d1d6;
+}
+
+.guide-table td {
+  padding: 0.55rem 0.6rem;
+  border-bottom: 1px solid #e8e8ec;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.guide-table td:first-child {
+  white-space: nowrap;
+  font-weight: 600;
+  color: #555;
+  width: 1%;
+  padding-right: 1rem;
+}
+
+.guide-table tr:last-child td {
+  border-bottom: none;
+}
+
 footer {
   text-align: center;
   font-size: 0.8rem;
