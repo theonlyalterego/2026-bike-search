@@ -26,7 +26,7 @@
   <main id="grid"></main>
 
   <footer>
-    <p>Data fetched from OfferUp, Pinkbike, and Craigslist. <span id="updated"></span></p>
+    <p>Data from OfferUp, Pinkbike, Craigslist + local shop links. <span id="updated"></span></p>
   </footer>
 
   <script>
@@ -257,6 +257,46 @@
         const card = buildCard(bike, lookup[bike.name] || {});
         grid.appendChild(card);
       });
+
+      // Local shops card
+      const lbsCard = document.createElement("article");
+      lbsCard.className = "card";
+      lbsCard.id = "local-shops";
+      const lbsH2 = document.createElement("h2");
+      lbsH2.textContent = "Local Used Bike Shops";
+      lbsCard.appendChild(lbsH2);
+
+      const shops = [
+        { name: "Trek Red Barn Refresh (Reston/Fairfax)", url: "https://www.trekbikes.com/us/en_US/pre-owned-bikes/c/RBR100/", desc: "Certified pre-owned Trek - nationwide shipping or local pickup" },
+        { name: "REI Re/Supply Cycling (Fairfax)", url: "https://www.rei.com/used/cycling", desc: "Used bikes & gear, any brand - REI membership required" },
+        { name: "Phoenix Bikes (Arlington)", url: "https://phoenixbikes-non-profit.company.site/", desc: "Nonprofit - exclusively used/refurbished bikes" },
+        { name: "Bikes@Vienna Used (Vienna)", url: "https://www.bikesatvienna.com/usedbikesandtrikes", desc: "Used recumbents & trikes, some conventional bikes" },
+        { name: "The Bike Shop Used (Centreville)", url: "https://thecentrevillebikeshop.com/used-bikes/", desc: "In-store used selection - call Jeff to inquire" },
+      ];
+
+      const lbsList = document.createElement("div");
+      lbsList.className = "listing-list";
+      shops.forEach(shop => {
+        const div = document.createElement("div");
+        div.className = "listing-item";
+        const info = document.createElement("div");
+        info.className = "listing-info";
+        const link = document.createElement("a");
+        link.className = "listing-title";
+        link.href = shop.url;
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.textContent = shop.name;
+        info.appendChild(link);
+        const desc = document.createElement("span");
+        desc.className = "listing-location";
+        desc.textContent = shop.desc;
+        info.appendChild(desc);
+        div.appendChild(info);
+        lbsList.appendChild(div);
+      });
+      lbsCard.appendChild(lbsList);
+      grid.appendChild(lbsCard);
 
       document.getElementById("updated").textContent =
         `Last updated ${new Date(data.fetched_at).toLocaleString()}`;
