@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-04T19:08:59.443687",
+  "fetched_at": "2026-06-05T08:40:47.232346",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -30,14 +30,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Medium Kona Honzo Deluxe",
-            "url": "https://offerup.com/item/detail/8731589b-a091-3b23-b26b-afba24aa924c",
-            "price": "$1,500",
-            "img": "https://images.offerup.com/LOIjxy0akcKD26DkJn3k5ARnHKI=/250x250/e0d7/e0d7163d2cd6497998eddc89273b7af5.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -69,6 +62,46 @@
     },
     {
       "bike_name": "Specialized Fuse",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Ragley Marley",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Mmmbop",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Vitues Sentier",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Canyon Stoic",
+      "sources": {
+        "craigslist": [],
+        "pinkbike": [],
+        "offerup": []
+      }
+    },
+    {
+      "bike_name": "Cannondale Habit HT",
       "sources": {
         "craigslist": [],
         "pinkbike": [],
