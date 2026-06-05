@@ -141,6 +141,7 @@ header h1 {
   background: #f9f9fb;
   align-items: flex-start;
   position: relative;
+  overflow: visible;
 }
 
 .listing-item:hover {
@@ -295,6 +296,43 @@ header h1 {
 .dismiss-btn:hover {
   background: #e8e8ec;
   color: #1c1c1e;
+}
+
+.new-banner {
+  background: #1a6d1a;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.new-banner .hdr-btn {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.4);
+  color: #fff;
+}
+
+.new-banner .hdr-btn:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+.new-badge {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background: #c62828;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
 }
 
 .collapse-btn {

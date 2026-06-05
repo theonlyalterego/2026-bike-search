@@ -17,6 +17,11 @@
     </div>
   </header>
 
+  <div id="new-banner" class="new-banner" style="display:none">
+    <span id="new-banner-text"></span>
+    <button id="new-banner-dismiss" class="hdr-btn">Got it</button>
+  </div>
+
   <nav id="jump">
     <span>Jump to:</span>
     <div id="jump-links"></div>
@@ -52,6 +57,7 @@
     ];
 
     const REJECTED_KEY = "bike-hunt-dismissed";
+    const SEEN_KEY = "bike-hunt-seen";
     let showDismissed = false;
 
     function getDismissed() {
@@ -100,6 +106,59 @@
       const count = getDismissed().size;
       document.getElementById("dismissed-count").textContent = count ? `${count} dismissed` : "";
     }
+
+    function getSeen() {
+      try { return new Set(JSON.parse(localStorage.getItem(SEEN_KEY) || "[]")); }
+      catch { return new Set(); }
+    }
+
+    function saveSeen(set) {
+      localStorage.setItem(SEEN_KEY, JSON.stringify([...set]));
+    }
+
+    let newUrls = new Set();
+
+    function markNewItems(data) {
+      const seen = getSeen();
+      newUrls = new Set();
+      const byBike = {};
+      (data.results || []).forEach(r => {
+        SOURCES.forEach(s => {
+          (r.sources[s.key] || []).forEach(item => {
+            if (!seen.has(item.url) && !getDismissed().has(item.url)) {
+              newUrls.add(item.url);
+              const bikeName = r.bike_name;
+              if (!byBike[bikeName]) byBike[bikeName] = 0;
+              byBike[bikeName]++;
+            }
+          });
+        });
+      });
+      const banner = document.getElementById("new-banner");
+      const text = document.getElementById("new-banner-text");
+      const total = newUrls.size;
+      if (total > 0) {
+        const details = Object.entries(byBike)
+          .sort((a, b) => b[1] - a[1])
+          .map(([name, count]) => `${name} (${count})`)
+          .join(", ");
+        text.innerHTML = `<strong>${total} new listing${total > 1 ? "s" : ""}</strong> found &mdash; ${details}`;
+        banner.style.display = "block";
+      } else {
+        banner.style.display = "none";
+      }
+    }
+
+    function markAllSeen() {
+      const seen = getSeen();
+      newUrls.forEach(u => seen.add(u));
+      saveSeen(seen);
+      newUrls.clear();
+      document.getElementById("new-banner").style.display = "none";
+      document.querySelectorAll(".new-badge").forEach(el => el.remove());
+    }
+
+    document.getElementById("new-banner-dismiss").addEventListener("click", markAllSeen);
 
     document.getElementById("toggle-dismissed").addEventListener("click", toggleDismissedVisibility);
     document.getElementById("clear-dismissed").addEventListener("click", clearAllDismissed);
@@ -156,12 +215,20 @@
 
         const dismissed = getDismissed();
         items.slice(0, 10).forEach(item => {
+          const isNew = newUrls.has(item.url);
           const div = document.createElement("div");
           div.className = "listing-item";
           div.dataset.url = item.url;
           if (dismissed.has(item.url)) {
             div.classList.add("dismissed");
             if (!showDismissed) div.style.display = "none";
+          }
+
+          if (isNew) {
+            const badge = document.createElement("span");
+            badge.className = "new-badge";
+            badge.textContent = "NEW";
+            div.appendChild(badge);
           }
 
           if (item.img) {
@@ -244,6 +311,8 @@
       const jump = document.getElementById("jump-links");
       const loading = document.getElementById("loading");
       loading.style.display = "none";
+
+      markNewItems(data);
 
       const lookup = {};
       (data.results || []).forEach(r => { lookup[r.bike_name] = r.sources; });
