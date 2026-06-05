@@ -10,6 +10,11 @@ BIKES = [
     {"name": "Giant Fathom",          "query": "giant+fathom"},
     {"name": "Marin San Quentin",     "query": "marin+san+quentin"},
     {"name": "Specialized Fuse",      "query": "specialized+fuse"},
+    {"name": "Ragley Marley",      "query": "Ragley+Marley"},
+    {"name": "Mmmbop",      "query": "Mmmbop"},
+    {"name": "Vitues Sentier",      "query": "Vitues+Sentier"},
+    {"name": "Canyon Stoic",      "query": "Canyon+Stoic"},
+    {"name": "Cannondale Habit HT",      "query": "Cannondale+Habit+HT"},
 ]
 
 CL_URL = "https://washingtondc.craigslist.org/search/sss?query={q}#search=2~gallery~0"
