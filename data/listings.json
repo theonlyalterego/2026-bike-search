@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-07T15:20:00.451988",
+  "fetched_at": "2026-06-08T09:20:17.464625",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -30,14 +30,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Mountain Trail Bicycle Kona Honzo ESD",
-            "url": "https://offerup.com/item/detail/e63c00ef-c987-3c2d-bbee-20295240f09a",
-            "price": "$1,800",
-            "img": "https://images.offerup.com/nq208wLtTonDLm4qhYTNRoYyKjk=/250x250/8f10/8f10b8a74c5240139553bfa00526739d.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -72,26 +65,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Upgraded 2019 Specialized Fuse 27.5+ Medium Teal color",
-            "url": "https://offerup.com/item/detail/b7bc5b32-3ad4-3204-8303-04b0eb5283eb",
-            "price": "$780",
-            "img": "https://images.offerup.com/4-cIqnprlA8qpjzn-wG2OvVMj4s=/333x250/09e8/09e8b5d05aaf46ad87ff064f505b4a6f.jpg"
-          },
-          {
-            "title": "Specialized Fuse Comp/will Trade",
-            "url": "https://offerup.com/item/detail/6f2997f7-4936-361e-bb8b-978d817a2f8e",
-            "price": "$1",
-            "img": "https://images.offerup.com/vaUWazd497WjrdS5UT6kcuhPwdY=/250x250/6f57/6f579baeb0504543b9b3b17a5268c9ac.jpg"
-          },
-          {
-            "title": "2008 Specialized Fuse 4 Bmx",
-            "url": "https://offerup.com/item/detail/3fc3199b-4b0c-32cb-bc31-2a0663e85a80",
-            "price": "$200",
-            "img": "https://images.offerup.com/OwaPJ_EPKEMDgR4t35-5VOLAPks=/250x250/9153/915399eb630d465a94d70659185f857f.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
