@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-09T16:28:32.109090",
+  "fetched_at": "2026-06-10T08:44:46.789735",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -28,7 +28,13 @@
     {
       "bike_name": "Kona Honzo",
       "sources": {
-        "craigslist": [],
+        "craigslist": [
+          {
+            "title": "Kona Honzo ESD 2021 (small)",
+            "url": "https://raleigh.craigslist.org/bik/d/raleigh-kona-honzo-esd-2021-small/7939825839.html",
+            "price": "$1,300"
+          }
+        ],
         "pinkbike": [],
         "offerup": []
       }
