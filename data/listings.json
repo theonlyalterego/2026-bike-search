@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-10T16:55:50.092189",
+  "fetched_at": "2026-06-11T09:09:26.953815",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -36,7 +36,14 @@
           }
         ],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Medium Kona Honzo Deluxe",
+            "url": "https://offerup.com/item/detail/8731589b-a091-3b23-b26b-afba24aa924c",
+            "price": "$1,500",
+            "img": "https://images.offerup.com/LOIjxy0akcKD26DkJn3k5ARnHKI=/250x250/e0d7/e0d7163d2cd6497998eddc89273b7af5.jpg"
+          }
+        ]
       }
     },
     {
