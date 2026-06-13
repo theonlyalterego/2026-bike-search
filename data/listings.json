@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-12T16:40:41.005936",
+  "fetched_at": "2026-06-13T08:18:22.589261",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -36,7 +36,14 @@
           }
         ],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Medium Kona Honzo Deluxe",
+            "url": "https://offerup.com/item/detail/8731589b-a091-3b23-b26b-afba24aa924c",
+            "price": "$1,500",
+            "img": "https://images.offerup.com/LOIjxy0akcKD26DkJn3k5ARnHKI=/250x250/e0d7/e0d7163d2cd6497998eddc89273b7af5.jpg"
+          }
+        ]
       }
     },
     {
@@ -47,11 +54,6 @@
             "title": "**2018 Giant Fathom 1 29\" Hardtail Mountain Bike \u2013 Excellent Condition",
             "url": "https://reading.craigslist.org/bik/d/fleetwood-2018-giant-fathom-29-hardtail/7939548884.html",
             "price": "$699"
-          },
-          {
-            "title": "Giant Fathom 1",
-            "url": "https://allentown.craigslist.org/bik/d/brodheadsville-giant-fathom/7934146364.html",
-            "price": "$900"
           }
         ],
         "pinkbike": [],
