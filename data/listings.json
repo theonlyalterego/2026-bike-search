@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-15T10:51:55.465638",
+  "fetched_at": "2026-06-15T18:22:59.192494",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -64,7 +64,13 @@
     {
       "bike_name": "Specialized Fuse",
       "sources": {
-        "craigslist": [],
+        "craigslist": [
+          {
+            "title": "Specialized Fuse Comp 29 Mountain Bike",
+            "url": "https://richmond.craigslist.org/bik/d/colonial-heights-specialized-fuse-comp/7941051221.html",
+            "price": "$1,200"
+          }
+        ],
         "pinkbike": [],
         "offerup": []
       }
