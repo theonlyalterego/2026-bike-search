@@ -1,12 +1,19 @@
 {
-  "fetched_at": "2026-06-30T16:19:26.870659",
+  "fetched_at": "2026-07-01T08:46:27.707050",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "COMMENCAL META HT/AM 29 LARGE",
+            "url": "https://offerup.com/item/detail/7bb3fd9b-28a8-3d77-9aef-adcda8342aec",
+            "price": "$1,000",
+            "img": "https://images.offerup.com/iem7pi-xF2XTb0LL5ueyR6IrgYM=/250x250/b72c/b72cb3a523704588a3388c5b59be6c62.jpg"
+          }
+        ]
       }
     },
     {
@@ -22,7 +29,14 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Norco Torrent 29",
+            "url": "https://offerup.com/item/detail/a96900d3-9d3c-3863-a357-902068ac0a6a",
+            "price": "$900",
+            "img": "https://images.offerup.com/G-yGCHdNkevlGAM0nBlhtmxBYas=/250x333/b8f3/b8f3a0c0bc6a4de983c28401eb138560.jpg"
+          }
+        ]
       }
     },
     {
@@ -44,7 +58,14 @@
           }
         ],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Giant Fathom 1 Mountain Bike Xl",
+            "url": "https://offerup.com/item/detail/6082f382-6c14-377c-8a16-14c0dba3a454",
+            "price": "$1,300",
+            "img": "https://images.offerup.com/hD6Hbzwca27D-IviAZ2nXH8UKDM=/250x250/74da/74da633aef884b31a8eae3f7ad58da5a.jpg"
+          }
+        ]
       }
     },
     {
@@ -52,7 +73,32 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Marin San Quentin Dirt Jumper",
+            "url": "https://offerup.com/item/detail/78bcfb2b-a69a-37cd-b4be-4718fff354fd",
+            "price": "$1",
+            "img": "https://images.offerup.com/eXlGYYTU76WcqY9pXL0sKkna2a0=/250x333/5e76/5e76ca102e5f4100911277e5b71c6c66.jpg"
+          },
+          {
+            "title": "2023 Marin San Quentin 1. 27.5 Medium Dirt Jumper.",
+            "url": "https://offerup.com/item/detail/b974a23a-8d0a-3346-8567-448d16ff6029",
+            "price": "$700",
+            "img": "https://images.offerup.com/ySgn8jc9hyORU7O8ZoG0pS9f5xU=/250x250/e7c5/e7c59ecfbf6d4936bcd1cf110bfb9f58.jpg"
+          },
+          {
+            "title": "Marin San Quentin 3 (XL frame)",
+            "url": "https://offerup.com/item/detail/408551ba-2953-3882-a6b9-e33650d6f4e8",
+            "price": "$1,200",
+            "img": "https://images.offerup.com/D0RG6J0vxEEKzECMi9yjUVjyskg=/250x250/58c0/58c0946949104d248dd1c0ed0b79f4a4.jpg"
+          },
+          {
+            "title": "2023 Marin San Quentin 3 (XL)",
+            "url": "https://offerup.com/item/detail/7d49eb0d-e237-3151-8ea6-d4ee1a8f3f48",
+            "price": "$1,200",
+            "img": "https://images.offerup.com/amGQyahlz0K8iwk6HlmhbamgaG0=/250x250/99b2/99b234fb9e424262a659d85121d81caa.jpg"
+          }
+        ]
       }
     },
     {
@@ -66,7 +112,20 @@
           }
         ],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "SPECIALIZED FUSE READY TO RUN",
+            "url": "https://offerup.com/item/detail/0010e670-0a2e-34c5-a882-37789ac935cd",
+            "price": "$750",
+            "img": "https://images.offerup.com/oYIzZ4MfVre-rqqOrl7xRBBGb9Q=/333x250/9523/95233627c983455ab64c0a81203186d2.jpg"
+          },
+          {
+            "title": "Specialized Fuse",
+            "url": "https://offerup.com/item/detail/0cd84cf5-c3f2-3130-8199-b786b23b4419",
+            "price": "$300",
+            "img": "https://images.offerup.com/QYkrQT8Litu3114RQbR-vnzaAGk=/250x250/2f1a/2f1a55bb0584468fa995745a3bf1638b.jpg"
+          }
+        ]
       }
     },
     {
@@ -88,7 +147,14 @@
           }
         ],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Ragley Mmmbop",
+            "url": "https://offerup.com/item/detail/418feb35-f37b-3474-ab37-b38ba3a863e7",
+            "price": "$1,500",
+            "img": "https://images.offerup.com/c5CAonUGR4KecV1EuWyOkp_vTBU=/250x250/2655/265532fbb19047eead74aee76de29730.jpg"
+          }
+        ]
       }
     },
     {
@@ -104,7 +170,14 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Canyon Stoic 2 Hardtail Mountain Bike (Like New)",
+            "url": "https://offerup.com/item/detail/b81f83f1-050c-3217-b0a7-11591d2989b9",
+            "price": "$900",
+            "img": "https://images.offerup.com/jE-d113wc9xwfHhVNm_ZBoZc1gg=/250x250/61cf/61cf6fd94325404891d41f39b71cd66e.jpg"
+          }
+        ]
       }
     },
     {
