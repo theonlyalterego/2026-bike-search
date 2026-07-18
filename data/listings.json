@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-17T15:08:50.235901",
+  "fetched_at": "2026-07-18T06:56:29.911719",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -57,14 +57,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Marin San Quentin 1",
-            "url": "https://offerup.com/item/detail/c2fdbaab-fa7f-3054-909b-4a8e4554c79e",
-            "price": "$900",
-            "img": "https://images.offerup.com/ZVrUUDAmgJUpqbAYJf4G5ivjYN4=/250x250/aa16/aa163ebf3dd4400590828c58ce9a2b9f.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
