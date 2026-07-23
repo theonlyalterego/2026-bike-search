@@ -1,12 +1,19 @@
 {
-  "fetched_at": "2026-07-22T15:27:15.205006",
+  "fetched_at": "2026-07-23T07:28:21.332160",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "COMMENCAL META HT/AM 29 LARGE",
+            "url": "https://offerup.com/item/detail/7bb3fd9b-28a8-3d77-9aef-adcda8342aec",
+            "price": "$1,000",
+            "img": "https://images.offerup.com/iem7pi-xF2XTb0LL5ueyR6IrgYM=/250x250/b72c/b72cb3a523704588a3388c5b59be6c62.jpg"
+          }
+        ]
       }
     },
     {
