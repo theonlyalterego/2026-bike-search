@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-31T15:58:52.440476",
+  "fetched_at": "2026-08-01T07:24:39.947773",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -80,13 +80,7 @@
     {
       "bike_name": "Mmmbop",
       "sources": {
-        "craigslist": [
-          {
-            "title": "2020 Ragley Mmmbop Bike",
-            "url": "https://www.craigslist.org/view/d/chinchilla-2020-ragley-mmmbop-bike/nAdgpHXEbPP9LUzC2WYUEd",
-            "price": "$800"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
