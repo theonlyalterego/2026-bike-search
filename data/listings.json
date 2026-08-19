@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T14:26:02.596024",
+  "fetched_at": "2026-08-19T05:23:15.457962",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -104,7 +104,13 @@
     {
       "bike_name": "Cannondale Habit HT",
       "sources": {
-        "craigslist": [],
+        "craigslist": [
+          {
+            "title": "Cannondale Habit HT 3",
+            "url": "https://www.craigslist.org/view/d/fort-george-meade-cannondale-habit-ht/x7bwyfQf7RnbqowkY4zxFx",
+            "price": "$899"
+          }
+        ],
         "pinkbike": [],
         "offerup": []
       }
