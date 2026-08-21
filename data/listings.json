@@ -1,12 +1,25 @@
 {
-  "fetched_at": "2026-08-21T05:26:10.041388",
+  "fetched_at": "2026-08-21T14:27:30.715669",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Commencal Meta HT Junior",
+            "url": "https://offerup.com/item/detail/a507948a-2704-3330-bebd-56dd89fa400e",
+            "price": "$700",
+            "img": "https://images.offerup.com/gtMFXstwteC6g1PCsA3Qa2WeVNk=/250x250/8e42/8e42b8b637cf46cf97bdd0f4facfc9bd.jpg"
+          },
+          {
+            "title": "2020 Commencal Meta HT AM Essential Bike",
+            "url": "https://offerup.com/item/detail/6017a399-7d0d-33fa-a794-a35ebd49a954",
+            "price": "$1,500",
+            "img": "https://images.offerup.com/j7p73TXMXjZgydAOtWjYa9IS548=/250x250/699c/699ce8e2f09147e9a4720e421a91a754.jpg"
+          }
+        ]
       }
     },
     {
@@ -42,13 +55,7 @@
     {
       "bike_name": "Giant Fathom",
       "sources": {
-        "craigslist": [
-          {
-            "title": "**2018 Giant Fathom 2  27 Hardtail Mountain Bike \u2013 Excellent Condition",
-            "url": "https://www.craigslist.org/view/d/fleetwood-2018-giant-fathom-27-hardtail/hAPbU6DXjioarBDqNaMsKu",
-            "price": "$599"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
