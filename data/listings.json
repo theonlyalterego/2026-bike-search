@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-30T10:13:08.459035",
+  "fetched_at": "2026-08-30T17:51:43.847547",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -9,18 +9,11 @@
           {
             "title": "2018 Commencal Meta HT 24",
             "url": "https://www.pinkbike.com/buysell/4226096/",
-            "price": "$650 USD",
+            "price": "$750 USD",
             "img": "https://ep1.pinkbike.org/p3pb30205138/p3pb30205138.jpg"
           }
         ],
-        "offerup": [
-          {
-            "title": "Commencal Meta HT Junior",
-            "url": "https://offerup.com/item/detail/a507948a-2704-3330-bebd-56dd89fa400e",
-            "price": "$700",
-            "img": "https://images.offerup.com/gtMFXstwteC6g1PCsA3Qa2WeVNk=/250x250/8e42/8e42b8b637cf46cf97bdd0f4facfc9bd.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
