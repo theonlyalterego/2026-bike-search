@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T17:32:30.644939",
+  "fetched_at": "2026-09-03T09:22:13.689221",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -13,7 +13,14 @@
             "img": "https://ep1.pinkbike.org/p3pb30205138/p3pb30205138.jpg"
           }
         ],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "COMMENCAL META HT/AM MTB",
+            "url": "https://offerup.com/item/detail/0ddfe4f7-ce8c-3db0-b96b-39d9a0d4ca03",
+            "price": "$1,000",
+            "img": "https://images.offerup.com/mrJN0B_mH3Mta2x1rwzWx2eej4k=/250x446/ac80/ac80e9f645704c5da12613e2c492d126.jpg"
+          }
+        ]
       }
     },
     {
@@ -29,7 +36,14 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Norco Torrent 29 (NEEDS TIRES)",
+            "url": "https://offerup.com/item/detail/a96900d3-9d3c-3863-a357-902068ac0a6a",
+            "price": "$700",
+            "img": "https://images.offerup.com/G-yGCHdNkevlGAM0nBlhtmxBYas=/250x333/b8f3/b8f3a0c0bc6a4de983c28401eb138560.jpg"
+          }
+        ]
       }
     },
     {
