@@ -1,19 +1,18 @@
 {
-  "fetched_at": "2026-09-08T17:41:57.902144",
+  "fetched_at": "2026-09-09T09:20:26.978602",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
-        "craigslist": [],
-        "pinkbike": [],
-        "offerup": [
+        "craigslist": [
           {
-            "title": "COMMENCAL META HT/AM MTB",
-            "url": "https://offerup.com/item/detail/0ddfe4f7-ce8c-3db0-b96b-39d9a0d4ca03",
-            "price": "$1,000",
-            "img": "https://images.offerup.com/mrJN0B_mH3Mta2x1rwzWx2eej4k=/250x446/ac80/ac80e9f645704c5da12613e2c492d126.jpg"
+            "title": "2021 Commencal Meta HT",
+            "url": "https://www.craigslist.org/view/d/new-kensington-2021-commencal-meta-ht/sUd44kynMzmN6wWTJmmssq",
+            "price": "$650"
           }
-        ]
+        ],
+        "pinkbike": [],
+        "offerup": []
       }
     },
     {
