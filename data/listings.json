@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-17T09:45:59.649969",
+  "fetched_at": "2026-09-17T17:53:27.109888",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -110,13 +110,7 @@
     {
       "bike_name": "Cannondale Habit HT",
       "sources": {
-        "craigslist": [
-          {
-            "title": "Cannondale Habit HT1 2024 Size Medium",
-            "url": "https://www.craigslist.org/view/d/alexandria-cannondale-habit-ht-size/f5tC8a9j17ZCjsw4WP2S57",
-            "price": "$750"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
