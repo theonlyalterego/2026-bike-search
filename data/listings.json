@@ -1,16 +1,10 @@
 {
-  "fetched_at": "2026-09-22T17:51:30.817048",
+  "fetched_at": "2026-09-23T09:40:31.876600",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
-        "craigslist": [
-          {
-            "title": "2021 Commencal Meta HT",
-            "url": "https://www.craigslist.org/view/d/new-kensington-2021-commencal-meta-ht/sUd44kynMzmN6wWTJmmssq",
-            "price": "$650"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
