@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T11:36:31.768096",
+  "fetched_at": "2026-10-09T19:11:11.906413",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -8,10 +8,10 @@
         "pinkbike": [],
         "offerup": [
           {
-            "title": "COMMENCAL META HT/AM MTB",
-            "url": "https://offerup.com/item/detail/0ddfe4f7-ce8c-3db0-b96b-39d9a0d4ca03",
-            "price": "$1,000",
-            "img": "https://images.offerup.com/mrJN0B_mH3Mta2x1rwzWx2eej4k=/250x446/ac80/ac80e9f645704c5da12613e2c492d126.jpg"
+            "title": "Commencal Meta HT AM \u2013 Fox 36 / SRAM Eagle / Spank (Frame Size Medium)",
+            "url": "https://offerup.com/item/detail/e34085ca-da66-3e0a-ba09-c62c45ea5014",
+            "price": "$1,450",
+            "img": "https://images.offerup.com/aGm9RGofgbFW4KEyoClb2kCruzQ=/333x250/644b/644b58397b33408ba3f82bb0ab24fee5.jpg"
           }
         ]
       }
@@ -59,7 +59,14 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Marin San Quentin jr 20 inch",
+            "url": "https://offerup.com/item/detail/3c35609c-c0d4-3a6b-8442-cf02a82623eb",
+            "price": "$450",
+            "img": "https://images.offerup.com/rKCwgwkqVWoaRrbmrLgkxxKpom0=/374x250/91ac/91ac14888e80498fbf9debb578d9382d.jpg"
+          }
+        ]
       }
     },
     {
