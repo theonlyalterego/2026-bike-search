@@ -1,12 +1,19 @@
 {
-  "fetched_at": "2026-10-10T10:54:19.767977",
+  "fetched_at": "2026-10-10T18:09:41.929567",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "COMMENCAL META HT/AM MTB",
+            "url": "https://offerup.com/item/detail/0ddfe4f7-ce8c-3db0-b96b-39d9a0d4ca03",
+            "price": "$1,000",
+            "img": "https://images.offerup.com/mrJN0B_mH3Mta2x1rwzWx2eej4k=/250x446/ac80/ac80e9f645704c5da12613e2c492d126.jpg"
+          }
+        ]
       }
     },
     {
@@ -22,7 +29,14 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Norco Torrent 29 (NEEDS TIRES)",
+            "url": "https://offerup.com/item/detail/a96900d3-9d3c-3863-a357-902068ac0a6a",
+            "price": "$700",
+            "img": "https://images.offerup.com/G-yGCHdNkevlGAM0nBlhtmxBYas=/250x333/b8f3/b8f3a0c0bc6a4de983c28401eb138560.jpg"
+          }
+        ]
       }
     },
     {
@@ -44,7 +58,14 @@
           }
         ],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Giant Fathom 3 2020",
+            "url": "https://offerup.com/item/detail/7c4ec169-2282-3acb-a4d4-2212cac0e3a4",
+            "price": "$400",
+            "img": "https://images.offerup.com/eboK_daRWnVE54SSpC7zNqVO0Pw=/250x540/183e/183ed5ed077a4fab816da3ed4d16bfcc.jpg"
+          }
+        ]
       }
     },
     {
@@ -52,7 +73,26 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "2023 Marin San Quentin 1. 27.5 Medium Dirt Jumper.",
+            "url": "https://offerup.com/item/detail/b974a23a-8d0a-3346-8567-448d16ff6029",
+            "price": "$700",
+            "img": "https://images.offerup.com/ySgn8jc9hyORU7O8ZoG0pS9f5xU=/250x250/e7c5/e7c59ecfbf6d4936bcd1cf110bfb9f58.jpg"
+          },
+          {
+            "title": "Marin San Quentin 3 (XL frame)",
+            "url": "https://offerup.com/item/detail/408551ba-2953-3882-a6b9-e33650d6f4e8",
+            "price": "$1,000",
+            "img": "https://images.offerup.com/D0RG6J0vxEEKzECMi9yjUVjyskg=/250x250/58c0/58c0946949104d248dd1c0ed0b79f4a4.jpg"
+          },
+          {
+            "title": "2023 Marin San Quentin 3 (XL)",
+            "url": "https://offerup.com/item/detail/7d49eb0d-e237-3151-8ea6-d4ee1a8f3f48",
+            "price": "$1,000",
+            "img": "https://images.offerup.com/amGQyahlz0K8iwk6HlmhbamgaG0=/250x250/99b2/99b234fb9e424262a659d85121d81caa.jpg"
+          }
+        ]
       }
     },
     {
@@ -60,7 +100,14 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "SPECIALIZED FUSE READY TO RUN",
+            "url": "https://offerup.com/item/detail/0010e670-0a2e-34c5-a882-37789ac935cd",
+            "price": "$750",
+            "img": "https://images.offerup.com/oYIzZ4MfVre-rqqOrl7xRBBGb9Q=/333x250/9523/95233627c983455ab64c0a81203186d2.jpg"
+          }
+        ]
       }
     },
     {
