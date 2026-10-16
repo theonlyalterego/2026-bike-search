@@ -1,18 +1,11 @@
 {
-  "fetched_at": "2026-10-15T17:57:04.235207",
+  "fetched_at": "2026-10-16T09:25:37.450062",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
         "craigslist": [],
-        "pinkbike": [
-          {
-            "title": "2021 Commencal Meta HT 20",
-            "url": "https://www.pinkbike.com/buysell/4240217/",
-            "price": "$950 USD",
-            "img": "https://ep1.pinkbike.org/p3pb30369462/p3pb30369462.jpg"
-          }
-        ],
+        "pinkbike": [],
         "offerup": []
       }
     },
