@@ -1,25 +1,24 @@
 {
-  "fetched_at": "2026-10-17T16:47:11.547701",
+  "fetched_at": "2026-10-18T09:16:24.121436",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
         "craigslist": [],
-        "pinkbike": [
-          {
-            "title": "2021 Commencal Meta HT 20",
-            "url": "https://www.pinkbike.com/buysell/4240217/",
-            "price": "$950 USD",
-            "img": "https://ep1.pinkbike.org/p3pb30369462/p3pb30369462.jpg"
-          }
-        ],
+        "pinkbike": [],
         "offerup": []
       }
     },
     {
       "bike_name": "Rocky Mountain Growler",
       "sources": {
-        "craigslist": [],
+        "craigslist": [
+          {
+            "title": "2023 Rocky Mountain Growler 20 Hardtail Mountain Bike - Large, 29er",
+            "url": "https://www.craigslist.org/view/d/new-york-2023-rocky-mountain-growler-20/i9tzgVjmu6j8i3QQdYNnMP",
+            "price": "$750"
+          }
+        ],
         "pinkbike": [],
         "offerup": []
       }
