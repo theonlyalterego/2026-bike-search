@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-30T18:56:26.866040",
+  "fetched_at": "2026-10-31T10:41:15.733962",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -42,13 +42,7 @@
     {
       "bike_name": "Giant Fathom",
       "sources": {
-        "craigslist": [
-          {
-            "title": "Like New Giant Fathom 2 Mountain Bike",
-            "url": "https://www.craigslist.org/view/d/villanova-like-new-giant-fathom/3uqtt2gE6WTX1MoED7TMNw",
-            "price": "$650"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
@@ -66,7 +60,20 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Specialized Fuse Comp/will Trade",
+            "url": "https://offerup.com/item/detail/6f2997f7-4936-361e-bb8b-978d817a2f8e",
+            "price": "$900",
+            "img": "https://images.offerup.com/vaUWazd497WjrdS5UT6kcuhPwdY=/250x250/6f57/6f579baeb0504543b9b3b17a5268c9ac.jpg"
+          },
+          {
+            "title": "2008 Specialized Fuse 4 Bmx",
+            "url": "https://offerup.com/item/detail/3fc3199b-4b0c-32cb-bc31-2a0663e85a80",
+            "price": "$200",
+            "img": "https://images.offerup.com/OwaPJ_EPKEMDgR4t35-5VOLAPks=/250x250/9153/915399eb630d465a94d70659185f857f.jpg"
+          }
+        ]
       }
     },
     {
@@ -106,7 +113,14 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": []
+        "offerup": [
+          {
+            "title": "Cannondale Habit HT 2 mtn bike",
+            "url": "https://offerup.com/item/detail/c9c232ec-3c7e-3966-b60f-db2c42fd59cd",
+            "price": "$1,100",
+            "img": "https://images.offerup.com/OGTgQZoPrQ1Hl1o_JIeHYUo0YMc=/250x333/23cd/23cd9e0b1975469295700c37b0a27ce8.jpg"
+          }
+        ]
       }
     }
   ]
