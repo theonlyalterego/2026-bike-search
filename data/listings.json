@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T11:38:06.973188",
+  "fetched_at": "2026-11-08T18:36:23.897326",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -36,14 +36,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Kona Honzo ST Custom 29er Hardtail \u2013 Upgraded Build mountain bike",
-            "url": "https://offerup.com/item/detail/75c16f35-b23c-36fa-920a-4c9afa3d2c87",
-            "price": "$1,350",
-            "img": "https://images.offerup.com/6p0OWg8aBFyhgxO9wTy4cdkAsfg=/250x333/197e/197eb72e5a08406885082bee06cbf498.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -51,26 +44,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Giant Fathom 2 - Hardtail Mountain Bike",
-            "url": "https://offerup.com/item/detail/dbba4d36-1583-3427-b1f6-3964453fe8a6",
-            "price": "$700",
-            "img": "https://images.offerup.com/pTWEeTlBE_cSuwT_FRc2yrsAsOY=/333x250/f257/f25710a0b1dc4d8ca2765f2f0bf80c03.jpg"
-          },
-          {
-            "title": "Giant fathom hardtail mountain bike",
-            "url": "https://offerup.com/item/detail/eb53c29d-0de8-32f7-8554-5de556f88885",
-            "price": "$699",
-            "img": "https://images.offerup.com/MidMtA0WKzzy8muVmxyA9j3eO0M=/482x250/a22a/a22af6af92724b588c304e767d301bc2.jpg"
-          },
-          {
-            "title": "29er Hard Tail GIANT FATHOM. Limited Edition",
-            "url": "https://offerup.com/item/detail/a332cfd0-3e12-3c23-b442-9d1df519b40b",
-            "price": "$750",
-            "img": "https://images.offerup.com/YaII5KuHsORgQy2-bZZnE-acFt0=/250x250/a956/a9561b12ff3f49dc92251fda6d1efdd2.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -86,32 +60,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Specialized Fuse 27.5 Bike (Large)",
-            "url": "https://offerup.com/item/detail/e7fa83c6-0b30-3d37-805c-108eb8f9b322",
-            "price": "$650",
-            "img": "https://images.offerup.com/Yp3kne600LRcPannWczuc69nXEA=/250x250/7e43/7e43a6d2b79a4bf7a4a3c1ffbef008f3.jpg"
-          },
-          {
-            "title": "Specialized Fuse 27.5",
-            "url": "https://offerup.com/item/detail/fafb7b9e-90ee-3a38-bf8d-83a7671501a5",
-            "price": "$1,300",
-            "img": ""
-          },
-          {
-            "title": "2021 Specialized Fuse Comp",
-            "url": "https://offerup.com/item/detail/d9cf5ea7-32c4-3971-adeb-10cffd5fab42",
-            "price": "$2,000",
-            "img": ""
-          },
-          {
-            "title": "2021 Specialized Fuse 29 Matte Blk & 2022 Rockshox Revelation Form",
-            "url": "https://offerup.com/item/detail/27ec70b2-8ba0-3373-8389-0465d7e93963",
-            "price": "$1,900",
-            "img": ""
-          }
-        ]
+        "offerup": []
       }
     },
     {
