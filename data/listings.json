@@ -1,19 +1,12 @@
 {
-  "fetched_at": "2026-11-12T13:29:12.893697",
+  "fetched_at": "2026-11-12T21:15:48.960135",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "COMMENCAL META HT/AM MTB",
-            "url": "https://offerup.com/item/detail/0ddfe4f7-ce8c-3db0-b96b-39d9a0d4ca03",
-            "price": "$1,000",
-            "img": "https://images.offerup.com/mrJN0B_mH3Mta2x1rwzWx2eej4k=/250x446/ac80/ac80e9f645704c5da12613e2c492d126.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -35,14 +28,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Norco Torrent 29 Converted to Street Bike",
-            "url": "https://offerup.com/item/detail/5789e3b0-4fe8-3215-a867-04f04cd027c7",
-            "price": "$650",
-            "img": "https://images.offerup.com/Y6WRNPsJ-K9hGZS9t9HgcsvDPMg=/250x444/e3a8/e3a8ad96759e48f6b85a604c62afe226.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -58,32 +44,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Giant Fathom 3 2020",
-            "url": "https://offerup.com/item/detail/7c4ec169-2282-3acb-a4d4-2212cac0e3a4",
-            "price": "$400",
-            "img": "https://images.offerup.com/eboK_daRWnVE54SSpC7zNqVO0Pw=/250x540/183e/183ed5ed077a4fab816da3ed4d16bfcc.jpg"
-          },
-          {
-            "title": "GIANT FATHOM XL",
-            "url": "https://offerup.com/item/detail/e01f8165-ba14-3b0b-acaf-e5cf5de01a8e",
-            "price": "$400",
-            "img": ""
-          },
-          {
-            "title": "Giant Fathom 29 1",
-            "url": "https://offerup.com/item/detail/deb6efd3-7d03-3e23-8181-2366429117be",
-            "price": "$1,000",
-            "img": ""
-          },
-          {
-            "title": "GIANT FATHOM 2 2020 MEDIUM 27.5\"",
-            "url": "https://offerup.com/item/detail/780ce084-289c-3e4e-91df-84b4eb4bcd44",
-            "price": "$1600",
-            "img": ""
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -91,26 +52,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "2023 Marin San Quentin 1. 27.5 Medium Dirt Jumper.",
-            "url": "https://offerup.com/item/detail/b974a23a-8d0a-3346-8567-448d16ff6029",
-            "price": "$700",
-            "img": "https://images.offerup.com/ySgn8jc9hyORU7O8ZoG0pS9f5xU=/250x250/e7c5/e7c59ecfbf6d4936bcd1cf110bfb9f58.jpg"
-          },
-          {
-            "title": "Marin San Quentin 3 (XL frame)",
-            "url": "https://offerup.com/item/detail/408551ba-2953-3882-a6b9-e33650d6f4e8",
-            "price": "$1,000",
-            "img": "https://images.offerup.com/D0RG6J0vxEEKzECMi9yjUVjyskg=/250x250/58c0/58c0946949104d248dd1c0ed0b79f4a4.jpg"
-          },
-          {
-            "title": "2023 Marin San Quentin 3 (XL)",
-            "url": "https://offerup.com/item/detail/7d49eb0d-e237-3151-8ea6-d4ee1a8f3f48",
-            "price": "$1,000",
-            "img": "https://images.offerup.com/amGQyahlz0K8iwk6HlmhbamgaG0=/250x250/99b2/99b234fb9e424262a659d85121d81caa.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -118,26 +60,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "SPECIALIZED FUSE READY TO RUN",
-            "url": "https://offerup.com/item/detail/0010e670-0a2e-34c5-a882-37789ac935cd",
-            "price": "$750",
-            "img": "https://images.offerup.com/oYIzZ4MfVre-rqqOrl7xRBBGb9Q=/333x250/9523/95233627c983455ab64c0a81203186d2.jpg"
-          },
-          {
-            "title": "Specialized Fuse Bmx/Dirt Jumper",
-            "url": "https://offerup.com/item/detail/fb555af7-fc35-308c-9ffd-cd62e76cf46f",
-            "price": "$245",
-            "img": ""
-          },
-          {
-            "title": "Specialized Fuse Small frame",
-            "url": "https://offerup.com/item/detail/aa606c6e-b3ba-3aec-99d2-8303cfd00b4f",
-            "price": "$2,500",
-            "img": ""
-          }
-        ]
+        "offerup": []
       }
     },
     {
