@@ -1,10 +1,16 @@
 {
-  "fetched_at": "2026-11-15T19:30:51.342993",
+  "fetched_at": "2026-11-16T13:17:11.572844",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
-        "craigslist": [],
+        "craigslist": [
+          {
+            "title": "Commencal Meta HT JR Mountain Bicycle",
+            "url": "https://www.craigslist.org/view/d/pelham-commencal-meta-ht-jr-mountain/ru9zA1RC6qD6U31ywtAfBX",
+            "price": "$800"
+          }
+        ],
         "pinkbike": [],
         "offerup": []
       }
