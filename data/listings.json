@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T23:09:13.734389",
+  "fetched_at": "2026-11-17T14:01:44.233140",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -18,13 +18,7 @@
     {
       "bike_name": "Rocky Mountain Growler",
       "sources": {
-        "craigslist": [
-          {
-            "title": "2023 Rocky Mountain Growler 20 Hardtail Mountain Bike - Large, 29er",
-            "url": "https://www.craigslist.org/view/d/new-york-2023-rocky-mountain-growler-20/i9tzgVjmu6j8i3QQdYNnMP",
-            "price": "$750"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
