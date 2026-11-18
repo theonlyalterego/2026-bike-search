@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T13:36:40.251447",
+  "fetched_at": "2026-11-18T21:40:50.052868",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -18,7 +18,13 @@
     {
       "bike_name": "Rocky Mountain Growler",
       "sources": {
-        "craigslist": [],
+        "craigslist": [
+          {
+            "title": "Rocky Mountain Growler 40 - 29\" - Green River",
+            "url": "https://www.craigslist.org/view/d/norristown-rocky-mountain-growler-green/d3ELPG6QQYUetAvVQ7Ttcz",
+            "price": "$1,000"
+          }
+        ],
         "pinkbike": [],
         "offerup": []
       }
