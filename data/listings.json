@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T20:19:20.258523",
+  "fetched_at": "2026-11-22T12:58:57.199101",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -66,14 +66,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Specialized Fuse Comp/will Trade",
-            "url": "https://offerup.com/item/detail/6f2997f7-4936-361e-bb8b-978d817a2f8e",
-            "price": "$900",
-            "img": "https://images.offerup.com/vaUWazd497WjrdS5UT6kcuhPwdY=/250x250/6f57/6f579baeb0504543b9b3b17a5268c9ac.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -113,14 +106,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Cannondale Habit HT 2 mtn bike",
-            "url": "https://offerup.com/item/detail/c9c232ec-3c7e-3966-b60f-db2c42fd59cd",
-            "price": "$1,100",
-            "img": "https://images.offerup.com/OGTgQZoPrQ1Hl1o_JIeHYUo0YMc=/250x333/23cd/23cd9e0b1975469295700c37b0a27ce8.jpg"
-          }
-        ]
+        "offerup": []
       }
     }
   ]
