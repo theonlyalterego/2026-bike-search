@@ -1,16 +1,10 @@
 {
-  "fetched_at": "2026-11-24T15:27:49.389705",
+  "fetched_at": "2026-11-25T15:14:02.018520",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
       "sources": {
-        "craigslist": [
-          {
-            "title": "Commencal Meta HT JR Mountain Bicycle",
-            "url": "https://www.craigslist.org/view/d/pelham-commencal-meta-ht-jr-mountain/ru9zA1RC6qD6U31ywtAfBX",
-            "price": "$800"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
@@ -18,13 +12,7 @@
     {
       "bike_name": "Rocky Mountain Growler",
       "sources": {
-        "craigslist": [
-          {
-            "title": "Rocky Mountain Growler 40 - 29\" - Green River",
-            "url": "https://www.craigslist.org/view/d/norristown-rocky-mountain-growler-green/d3ELPG6QQYUetAvVQ7Ttcz",
-            "price": "$1,000"
-          }
-        ],
+        "craigslist": [],
         "pinkbike": [],
         "offerup": []
       }
