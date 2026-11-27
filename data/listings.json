@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T14:38:29.914777",
+  "fetched_at": "2026-11-27T14:34:44.406566",
   "results": [
     {
       "bike_name": "Commencal Meta HT",
@@ -50,20 +50,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Giant Fathom 2 - Hardtail Mountain Bike",
-            "url": "https://offerup.com/item/detail/dbba4d36-1583-3427-b1f6-3964453fe8a6",
-            "price": "$700",
-            "img": "https://images.offerup.com/pTWEeTlBE_cSuwT_FRc2yrsAsOY=/333x250/f257/f25710a0b1dc4d8ca2765f2f0bf80c03.jpg"
-          },
-          {
-            "title": "Giant fathom hardtail mountain bike",
-            "url": "https://offerup.com/item/detail/eb53c29d-0de8-32f7-8554-5de556f88885",
-            "price": "$699",
-            "img": "https://images.offerup.com/MidMtA0WKzzy8muVmxyA9j3eO0M=/482x250/a22a/a22af6af92724b588c304e767d301bc2.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -79,32 +66,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "Specialized Fuse 27.5 Bike (Large)",
-            "url": "https://offerup.com/item/detail/e7fa83c6-0b30-3d37-805c-108eb8f9b322",
-            "price": "$650",
-            "img": "https://images.offerup.com/Yp3kne600LRcPannWczuc69nXEA=/250x250/7e43/7e43a6d2b79a4bf7a4a3c1ffbef008f3.jpg"
-          },
-          {
-            "title": "Specialized Fuse 27.5",
-            "url": "https://offerup.com/item/detail/fafb7b9e-90ee-3a38-bf8d-83a7671501a5",
-            "price": "$1,300",
-            "img": ""
-          },
-          {
-            "title": "2021 Specialized Fuse Comp",
-            "url": "https://offerup.com/item/detail/d9cf5ea7-32c4-3971-adeb-10cffd5fab42",
-            "price": "$2,000",
-            "img": ""
-          },
-          {
-            "title": "2021 Specialized Fuse 29 Matte Blk & 2022 Rockshox Revelation Form",
-            "url": "https://offerup.com/item/detail/27ec70b2-8ba0-3373-8389-0465d7e93963",
-            "price": "$1,900",
-            "img": ""
-          }
-        ]
+        "offerup": []
       }
     },
     {
@@ -136,14 +98,7 @@
       "sources": {
         "craigslist": [],
         "pinkbike": [],
-        "offerup": [
-          {
-            "title": "\u200b2022 Canyon Stoic 4 Hardtail mountain bike \u2013 Size large (Like New / ~50 Miles)",
-            "url": "https://offerup.com/item/detail/e4c16376-0bd3-3a0f-a6d3-c2bbd169a529",
-            "price": "$1,300",
-            "img": "https://images.offerup.com/x47HLXWP4afzThoYehRrQ1vfYZA=/444x250/f40b/f40beb0533c0492e932011a1e1b614a2.jpg"
-          }
-        ]
+        "offerup": []
       }
     },
     {
